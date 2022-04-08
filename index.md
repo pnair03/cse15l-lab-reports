@@ -21,3 +21,7 @@ Letters:
 
 Here is an image:
 ![Image](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/osx/elcapitan-system-integration-protection-hero.jpg)
+
+[Lab Report 1](lab-report-1-week-2.html)
+
+[Lab Report 1](https://<your-username>.github.io/<your-lab-reports-repo>/lab-report-1-week-2.html)
