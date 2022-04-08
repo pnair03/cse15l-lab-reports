@@ -18,3 +18,6 @@ Letters:
 > Hi!
 
 `Click here` for more!
+
+Here is an image:
+![Image](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/osx/elcapitan-system-integration-protection-hero.jpg)
