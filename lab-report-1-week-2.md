@@ -72,6 +72,49 @@ I then logged back in using `ssh`, and I ran the file on the remote computer. He
 
 > Setting an SSH Key
 
+The purpose of this step is to set up a ssh key so that I won't need a password every time I log in. 
+
+I entered the following on the client (not remotely connected):
+
+`ssh-keygen`
+
+`/Users/<user-name>/.ssh/id_rsa` (when asked which file to use to save the key)
+
+(It will now ask for a passphrase, which should be left empty)
+
+The following should be part of the output:
+
+![Image](ss7.png)
+
+To copy the public key to the `.ssh` directory, I logged in and entered the following:
+
+`mkdir .ssh`
+
+`exit`
+
+After I logout, I type in one last command:
+
+`scp /Users/<user-name>/.ssh/id_rsa.pub <my_account_name>@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
+A password isn't necessary to log in anymore. Try it out!
+
+> Optimizing Remote Running
+
+In order to speed up the process of remote running, here are some things I tired:
+
+* Using commands inside quotes to directly run it on the remote server
+
+`ssh cs15lsp22zz@ieng6.ucsd.edu "ls"`
+
+* Using semicolons to run multiple commands
+
+`scp WhereAmI.java <my_account_name>@ieng6.ucsd.edu, ssh <account> “javac WhereAmI.java”; ssh <account> “java WhereAmI”`
+
+* Using the up arrow to access previous commands
+
+These three tips helped me save time and keystrokes. 
+
+![Image](ss8.png)
  
 
 
