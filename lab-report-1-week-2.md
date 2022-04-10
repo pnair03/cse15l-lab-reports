@@ -10,12 +10,12 @@ After installing and opening VScode, my screen looked like this:
 
 ![Image](ss1.png)
 
-While some differences may exist, everybody's starting page shou.d look relatively the same. 
+While some differences may exist, everybody's starting page should look relatively the same. 
 
 > Remotely Connecting
 
 I first looked up my course-specific account here:
-https://code.visualstudio.com/
+[https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php)
 
 Everybody's username should start with `cs15lsp22`, and it will be followd by three letters.
 
