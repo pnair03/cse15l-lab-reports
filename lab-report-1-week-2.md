@@ -2,7 +2,7 @@
 
 This lab report will contain a tutorial about how to log in to a course-specific account on `ieng6`. 
 
-1. Installing VScode
+> Installing VScode
 
 The first step is to install [Visual Studio Code](https://code.visualstudio.com/).
 
@@ -12,7 +12,7 @@ After installing and opening VScode, my screen looked like this:
 
 While some differences may exist, everybody's starting page shou.d look relatively the same. 
 
-2. Remotely Connecting
+> Remotely Connecting
 
 I first looked up my course-specific account here:
 https://code.visualstudio.com/
@@ -33,6 +33,45 @@ Since it is my first time logging in, it asked me to confirm my log-in. After cl
 
 I am now connected remotely!
 
-3. Trying Some Commands
+> Trying Some Commands
+
+Here are screenshots of my trying some commands on the remote computer.
+
+![Image](ss4.png)
+
+![Image](ss5.png)
+
+Here are some other commands that can be tried:
+* `ls -lat`
+* `cd ~`
+* `cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/`
+* `cat /home/linux/ieng6/cs15lsp22/public/hello.txt`
+* `mkdir <directory/file name>`
+
+> Moving Files with `scp`
+
+To try moving files using `scp`, I first created `WhereAmI.java` and typed the following:
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
+
+After running this on my personal computer by using `javac` and `java`, I entered the following line in the terminal:
+
+`scp WhereAmI.java <my_account_name>@ieng6.ucsd.edu:~/`
+
+I then logged back in using `ssh`, and I ran the file on the remote computer. Here is the output:
+
+![Image](ss6.png)
+
+> Setting an SSH Key
+
+ 
 
 
