@@ -1,6 +1,6 @@
 # Week 6 Lab Report
 
-> ## Streamlining ssh Configuration
+## Streamlining ssh Configuration
 
 The goal of this task is to make the process of logging into ieng6 easier.
 
@@ -20,7 +20,7 @@ This also can be used with the `scp` command to copy files:
 
 ![Image](ss18.png)
 
-> ## Setup Github Access from ieng6
+## Setup Github Access from ieng6
 
 The goal of this task is to be able to commit and push changes from the ieng6 server to the main branch on Github.
 
@@ -42,7 +42,7 @@ To test if I can commit and push changes, I removed a file from the repository f
 
 The link for the commit can be accessed [here](https://github.com/pnair03/sample-repo/commit/0e30749575484fe40767dcfccfc39cc49a781436).
 
-> ## Copy whole directories with `scp -r`
+## Copy whole directories with `scp -r`
 
 The goal of this task is to copy subdirectories and directories instead of just files.
 
