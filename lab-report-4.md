@@ -28,7 +28,7 @@ For my implementation, none of the tests passed. Here is the output produced:
 
 ![Image](ss26.png)
 
-FOr the implementation that was reviewed, none of the tests passed as well. Here is the output produced:
+For the implementation that was reviewed, none of the tests passed as well. Here is the output produced:
 
 ![Image](ss27.png)
 
