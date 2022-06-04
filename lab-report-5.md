@@ -26,7 +26,9 @@ Expected output: `[]` (no links should have been printed)
 
 ![Image](ss30.png)
 
-Bug with my implementation: the program includes the "/" as part of the link when it shouldn't. Thus, even though there aren't any links in the file, my implementation printed out "/uri" as a link. 
+Bug with my implementation: the program includes the "/" as part of the link when it shouldn't. Thus, even though there aren't any links in the file, my implementation printed out "/uri" as a link. For this to be fixed, the code shown below should check for a "/" in an if-statement:
+
+![Image](ss31.png)
 
 ## Test File 2
 
@@ -34,11 +36,13 @@ My implementation is correct for this file.
 
 Actual outputs:
 
-![Image](ss31.png)
+![Image](ss32.png)
 
 Expected output: `[</my uri>]`
 
-![Image](ss32.png)
+![Image](ss33.png)
 
-Bug with provided implementation: For the previous file, the program did not print out any links because it detected a "/". This happened with this file as well; however, it did not account for "<" and ">".   
+Bug with provided implementation: For the previous file, the program did not print out any links because it detected a "/". This happened with this file as well; however, it did not account for "<" and ">". For this to be fixed, the code shown below should check for those symbols:
+
+![Image](ss34.png)
 
